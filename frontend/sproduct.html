@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NutriVibe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+            <!---Nav bar------------->
+            <!---LOGO--------------->
+            <section id="header">  
+                <a href="#"><img src="logo-bl3rd-bg2.png" class="logo" alt=""></a>
+                    <!---Home w ale gnbha--------------->
+                <div>
+                    <ul id="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="shop.html">Product</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="cart.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="search.html"><i class="fa-solid fa-user"></i></a></li>
+                        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <div class="login"> 
+                            <a href="Login.html">Login</a>
+                        </div>
+                        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                    </ul>
+                </div>
+                <div id="mobile">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <i id="bar" class="fa-solid fa-outdent"></i>
+                </div>
+            </section>
+
+    <section id="prodetails" class="section-p1"> 
+        <div class="single-pro-image">
+            <img src="img/granola.png" width="100%" id="MainImg">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/granola.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/granola.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/granola2.png" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h4><b>Granola with Nuts</b></h4>
+            <h3 style="color: green;">LE 100.00</h3>
+            <h6>414 cal/100gm</h6>
+            <span>Granola nuts, a beloved staple in the realm of healthy snacks, encapsulate a harmonious blend of flavors, textures, and nutrients that appeal to the palate and nourish the body. This delightful concoction typically comprises a hearty mixture of whole grain oats, crunchy nuts, seeds, dried fruits,and a touch of sweetness, often from honey or maple syrup.
+                <br><br>
+                One of the most enchanting qualities of granola nuts lies in their versatility. Whether enjoyed as a convenient on-the-go snack, a satisfying  breakfast component, or a flavorful addition to various culinary creations, granola nuts offer a myriad of possibilities. Sprinkled over yogurt or paired with milk, they transform a simple meal into a delightful culinary experience. Their versatility extends beyond breakfast, as they can be incorporated into baked goods, used as a topping for salads or desserts, or even enjoyed straight from the bag for a quick energy boost during outdoor adventures.<br></span>
+            <input type="number" value="1" min="1" >
+            <button>Add to cart</button>
+            <h5>Category: Snacks</h5>
+                <h5>Tag: Organic</h5>
+        </div>
+
+
+
+
+    </section>
+    <script> 
+    /* hna bn3ml goz2 an lma ados 3la swr ale t7t product tzhr fo2 */
+      var MainImg = document.getElementById("MainImg");
+      var smallimg = document.getElementsByClassName("small-img");
+    /*hna y3ni ale ados 3l3h ytbdl b MainImg ale hya alkbera */
+      smallimg[0].onclick= function(){
+        MainImg.src = smallimg[0].src;
+      }
+      smallimg[1].onclick= function(){
+        MainImg.src = smallimg[1].src;
+      }
+      smallimg[2].onclick= function(){
+        MainImg.src = smallimg[2].src;
+      }
+    </script>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
